@@ -1,0 +1,171 @@
+{
+  "contract_name": "Rcash",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "send",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "buy",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Send",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Buy",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6103e860005560028054600160a060020a03191633600160a060020a03161790555b5b61028f806100426000396000f300606060405263ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663ad7a672f811461005e578063d0679d3414610083578063d96a094a146100b7578063f8b2cb4f146100df575b600080fd5b341561006957600080fd5b610071610110565b60405190815260200160405180910390f35b341561008e57600080fd5b610071600160a060020a0360043516602435610116565b60405190815260200160405180910390f35b34156100c257600080fd5b6100716004356101b8565b60405190815260200160405180910390f35b34156100ea57600080fd5b610071600160a060020a0360043516610244565b60405190815260200160405180910390f35b60005481565b33600160a060020a03818116600090815260016020526040808220805486900390559185168152818120805485019055917f93eb3c629eb575edaf0252e4f9fc0c5ccada50496f8c1d32f0f93a65a8257eb5918590859051600160a060020a039384168152919092166020820152604080820192909252606001905180910390a150600160a060020a0333166000908152600160205260409020545b92915050565b33600160a060020a0381166000908152600160205260408082208054850190558154849003825590917fe3d4187f6ca4248660cc0ac8b8056515bac4a8132be2eca31d6d0cc170722a7e91849051600160a060020a03909216825260208201526040908101905180910390a150600160a060020a0333166000908152600160205260409020545b919050565b600160a060020a0381166000908152600160205260409020545b9190505600a165627a7a72305820ad393464ef3879b7afd2386e2944b37a704e75686ce8e0bcd7e240c7e12e375c0029",
+  "networks": {
+    "65535": {
+      "events": {
+        "0x93eb3c629eb575edaf0252e4f9fc0c5ccada50496f8c1d32f0f93a65a8257eb5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Send",
+          "type": "event"
+        },
+        "0xe3d4187f6ca4248660cc0ac8b8056515bac4a8132be2eca31d6d0cc170722a7e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Buy",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x924d79e4f11a02839cbb596df5d7f32fb32947e0",
+      "updated_at": 1501671522128
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1501671522128
+}
