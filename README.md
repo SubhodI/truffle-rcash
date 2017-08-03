@@ -1,0 +1,2 @@
+# truffle-rcash
+Rcash contract
